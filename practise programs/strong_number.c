@@ -4,7 +4,7 @@ int main()
     int n;
     int fact = 1;
     int sum = 0;
-    int digit,rev = 0;
+    int digit;
     
     printf("Enter n: ");
     scanf("%d",&n);
@@ -12,7 +12,7 @@ int main()
     
     while(n!=0){
         digit = n % 10;
-        rev = rev * 10 + digit;
+      
         n = n/10;
         fact = 1;
         for(int i=1;i<=digit;i++){
