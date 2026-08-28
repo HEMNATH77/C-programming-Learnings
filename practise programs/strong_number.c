@@ -12,14 +12,15 @@ int main()
     
     while(n!=0){
         digit = n % 10;
-      
-        n = n/10;
+        
         fact = 1;
         for(int i=1;i<=digit;i++){
             
             fact = fact * i;
         }
+        
         sum = sum + fact;
+        n = n/10;
     }
     
     printf("sum = %d\n",sum);
