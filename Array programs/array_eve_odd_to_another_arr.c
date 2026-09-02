@@ -9,13 +9,17 @@ int main()
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    printf("Array elements:\n");
+    for(int i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+    printf("\n");
     int odd_arr[n],even_arr[n];
     
     for(int i=0;i<n;i++){
         even_arr[i] = 0;
         odd_arr[i] = 0;
     }
-    
     
     int eve = 0;
     int odd = 0;
