@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 int main()
 {
     int n;
@@ -14,14 +15,12 @@ int main()
     
     for(int i=0;i<n;i++){
         if(str[i] == ch){
-        printf("Yes the character is present");
-        //printf("%s",&str[i]);
-        return 0;  }
+            printf("Yes the character is present");
+            return 0;
+        }
     }
     
     printf("Character is not found in the string");
 
-    return 0;
-}
     return 0;
 }
