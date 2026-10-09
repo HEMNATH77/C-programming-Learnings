@@ -19,7 +19,7 @@ int main()
         
         if(arr[i] == target){
             found = 1;
-            printf("%d",i);
+            printf("indexes : %d ",i);
             break;
         }
         
