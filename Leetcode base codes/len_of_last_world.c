@@ -29,4 +29,39 @@ int main()
     res[w] = '\0';
     printf("%s",res);
 
+
+
+
+// ---------------------------- Leetcode -----------------------------------------//
+
+
+int lengthOfLastWord(char* s) {
+    int length = strlen(s);
+
+    //char res[length];
+    int i = length -1;
+
+    while(i>=0 && s[i] ==' '){
+        i--;
+    }
+
+    for(;i>=0;i--){
+        if(s[i]==' '){
+            break;
+        }
+    }
+
+    int space = i + 1;
+    int w = 0;
+
+    for(int j=space;j<length && s[j] != ' ';j++){
+        w++;
+    }
+
+    return w;
+
 }
+
+
+
+
