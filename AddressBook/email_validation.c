@@ -66,4 +66,17 @@ int main()
     if(at_pos == -1 || dot_pos == -1 || dot_pos < at_pos)
     printf("Dot must appear after \n");
 
+
+    int dot_after_at = 0;
+
+    for(int i = at_pos + 1; i < length; i++)
+    {
+    if(str[i] == '.')
+        dot_after_at++;
+    }
+
+    if(dot_after_at != 1)
+    printf("Only one dot should be present after @ symbol\n");
+    
+
 }
