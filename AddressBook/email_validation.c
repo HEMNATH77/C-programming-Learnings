@@ -64,7 +64,7 @@ int main()
     // printf("dot_position: %d\n",dot_pos);
 
     if(at_pos == -1 || dot_pos == -1 || dot_pos < at_pos)
-    printf("Dot must appear after \n");
+    printf("Dot must appear after @ \n");
 
 
     int dot_after_at = 0;
