@@ -19,11 +19,22 @@ int main()
 
     printf("\n");
 
-    int bit = num &(1<<n);
+    int bit = num & (1<<n) ;
+    
+    for(int i=7;i>=0;i--){
+        int  bit_bin = bit & (1<<i);
+        if(bit_bin)
+        printf("1");
+        else
+        printf("0");
+    }
+
+    printf("\n");
 
     if(bit)
-    printf("%d (nth) bit is 1\n",n);
-
+    printf("%d(nth) bit is 1",n);
     else
-    printf("%d (nth) bit is 0\n",n);
+    printf("%d(nth) bit is 0",n);
+
+    
 }
