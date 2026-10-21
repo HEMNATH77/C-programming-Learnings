@@ -9,6 +9,7 @@ int main()
     printf("Enter n: ");
     scanf("%d",&n);
 
+    printf("Binary of num: ");
     for(int i=7;i>=0;i--){
         int bin = num & (1<<i);
         if(bin)
@@ -20,7 +21,8 @@ int main()
     printf("\n");
 
     int bit = num &((1<<n) - 1);
-    
+
+    printf("Binary of num after bit ops: ");
     for(int i=7;i>=0;i--){
         int  bit_bin = bit & (1<<i);
         if(bit_bin)
