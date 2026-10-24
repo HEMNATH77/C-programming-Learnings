@@ -5,6 +5,7 @@ int main()
     char ch = 'A';
     
     int j = 7;
+
     
     for(int i=0;i<8;i++){
         
