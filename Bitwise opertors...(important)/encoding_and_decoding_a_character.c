@@ -24,9 +24,27 @@ int main()
         j--;
     }
     
+    printf("Encoded array: ");
     for(int i = 0;i<8;i++){
         printf("%c ",arr[i]);
     }
+    
+    printf("\n");
+    char d_ch = 0;
+    int k = 7;
+    for(int i =0;i<8;i++){
 
+        int get = arr[i] & 1; 
+    
+
+        // setting 
+        d_ch = d_ch  | (get << k);
+
+        k--;
+    }
+
+    printf("Decoded character : ");
+
+    printf("%c ",d_ch);
     
 }
