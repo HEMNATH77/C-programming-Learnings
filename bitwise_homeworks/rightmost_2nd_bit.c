@@ -31,3 +31,39 @@ int main()
     }
 
 }
+
+
+
+
+/*
+
+
+#include<stdio.h>
+
+int main()
+{
+    int num;
+    printf("enter num: ");
+    scanf("%d",&num);
+
+    num = num & (num - 1);
+
+    int res = num & (~num + 1);
+    
+    if(res != 0){
+    //printf("2nd position = >%d\n",res);
+    int index = 0;
+
+        while (res > 1)
+        {
+            res = res >> 1;
+            index++;
+        }
+
+        printf("Index = %d\n", index);
+    }
+}
+
+
+
+*/
