@@ -8,7 +8,7 @@ int main()
 
 
     
-    while(num != 1){
+    while(num != 1 && num != 4){ // n != 4 indicates an unhappy number's repeating cycle.
     int sum = 0;
     
     while(num != 0){
