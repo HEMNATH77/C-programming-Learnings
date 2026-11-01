@@ -6,7 +6,7 @@ int main()
     printf("Enter num: ");
     scanf("%d",&num);
 
-    int flag = 0;
+
     
     while(num != 1){
     int sum = 0;
